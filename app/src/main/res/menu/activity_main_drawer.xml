@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_excel"
+            android:icon="@drawable/exam"
+            android:title="Gerar Excel do Banco"
+            android:iconTint="#000"/>
+
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/email"
+            android:title="Enviar Email"
+            android:iconTint="#000"/>
+        <item
+            android:id="@+id/nav_memoria"
+            android:icon="@drawable/delete"
+            android:title="Deletar Arquivo na Memória"
+            android:iconTint="#000"/>
+        <item
+            android:id="@+id/nav_banco"
+            android:icon="@drawable/delete"
+            android:title="Deletar Dados no Banco"
+            />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/logout"
+            android:title="Sair"
+            android:iconTint="#000"/>
+    </group>
+
+</menu>

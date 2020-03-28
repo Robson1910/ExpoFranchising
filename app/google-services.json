@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "552513561045",
+    "firebase_url": "https://expofranchising-42c69.firebaseio.com",
+    "project_id": "expofranchising-42c69",
+    "storage_bucket": "expofranchising-42c69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552513561045:android:8acb1429758ecaa09e1d5c",
+        "android_client_info": {
+          "package_name": "com.gerielcastro.expofranchising"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552513561045-6iq5tnr7k6i3lcinfjvir5e6qmnferg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gerielcastro.expofranchising",
+            "certificate_hash": "1e894c753804a2c2164b4c41e6b11457d7588e58"
+          }
+        },
+        {
+          "client_id": "552513561045-n7c2r8gpvkfd54vd1is471dk573232l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFYo9Esc2tRULLSthEKdf0Ne37FFhk6Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552513561045-n7c2r8gpvkfd54vd1is471dk573232l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

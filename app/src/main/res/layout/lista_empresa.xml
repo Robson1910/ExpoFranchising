@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tick" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nome_empresa_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="Nome Empresa"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/responsave_text_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="Data Nome"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userId_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cargo_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/responsave_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/nome_data_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cidade_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/empresa_expositora_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta1_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta2_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta3_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta4_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta5_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta6_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta7A_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta7B_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta8_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta9_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta10_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11A_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11B_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11C_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11D_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11E_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11F_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11G_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta11H_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta12_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta13_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta14_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta15_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta16_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/resposta17_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/key_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="" />
+
+</LinearLayout>

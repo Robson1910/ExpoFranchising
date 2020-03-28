@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formulario.Formulario2Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#162F83"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arrow_back_formulario2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/ic_arrow_back" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/expo" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/layout_shadow_white"
+                android:paddingBottom="10dp"
+                android:text="FORMULÁRIO"
+                android:textAlignment="center"
+                android:textColor="#162F83"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="1) Qual o maior objetivo de sua participação no evento?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_1A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Captar novos franqueados"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Reforçar relacionamento com franqueados já existentes"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Reforçar relacionamento com entidades do setor"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Fortalecer a imagem da empresa"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta1"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Fornecer equipamentos e serviços para redes de franquias"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Outros:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_outros1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="2) Como o evento correspondeu às suas expectativas em relação à captação de futuros franqueados?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_2A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Acima das Expectativas"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_2B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Como esperado"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_2C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Desapontou"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_view_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="3) Qual a sua expectativa em volume total de negócios gerados a partir da Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_3A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Menos de cem mil"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="até cem mil"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="De cento e um mil a trezentos mil"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="De trezentos e um mil a quinhentos mil"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="De quinhentos e um mil a setecentos e cinquenta mil"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="De setecentos e cinquenta mil e um a um milhão"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3G"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta3"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Acima de um milhão"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_view_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="4) Quantas e quais marcas você está expondo na Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/Edit_text_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="5) Qual o setor de atuação e o faturamento anual da empresa?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="6) Participa de outras feiras do setor? Quais?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="7) Como a feira correspondeu às suas expectativas com relação à:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="A) Quantidade de visitantes"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup7A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_7Aa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta7A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Acima das Expectativas"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7Ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta7A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Como esperado"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7Ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta7A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Desapontou"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="B) Qualidade dos visitantes"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup7B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_7Ba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta7B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Acima das Expectativas"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7Bb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta7B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Como esperado"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7Bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta7B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Desapontou"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_view_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="8) Em qual mês e local você sugere que ocorra a Expo Franchising ABF Rio 2019?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="9) O que você achou da divulgação para público geral?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_9A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta9"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_9B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta9"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_9C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta9"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_9D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta9"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Justifique:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="10) Os convites digitais foram repassados aos seus clientes para divulgação de seu estande na feira?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_10A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta10"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Sim"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_10B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta10"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Não"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Se não enviou, por qual morivo? :"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="11) Avaliação de tópicos"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="A) Organização geral da feira"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Aa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11A"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="B) Atendimento ao Expositor"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Ba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Bb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Bd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11B"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="C) Departamento Financeiro"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Ca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11C"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11C"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11C"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Cd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11C"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="D) Departamento Comercial"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Da"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11D"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Db"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11D"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Dc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11D"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Dd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11D"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="E) Limpeza da Feira"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Ea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11E"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Eb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11E"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Ec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11E"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Ed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11E"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="F) Segurança da Feira"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Fa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11F"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11F"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Fc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11F"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Fd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11F"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="G) Montadora Oficial"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Ga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11G"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Gb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11G"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Gc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11G"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Gd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11G"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="H) Área de Alimentação"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup11H"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_11Ha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11H"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="excelente"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Hb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11H"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="bom"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Hc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11H"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="médio"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_11Hd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta11H"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="fraco"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_view_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="12) Levando em consideração todos os fatores, sua participação na Expo Franchising ABF Rio 2018 foi:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_12A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta12"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Totalmente compensadora"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_12B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta12"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Parcialmente compensadora"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_12C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta12"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Nada compensadora"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Justifique:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="13) Participaria da próxima edição?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_13A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta13"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Sim"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_13B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta13"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Não"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_13C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta13"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Talvez"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Justifique:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="14) Você pretende aumentar, manter ou diminuir a área de seu estande?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_14A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta14"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Aumentar"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_14B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta14"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Manter"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_14C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta14"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Diminuir"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Diminuir, favor justificar:"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="15) Que nota você daria ao evento, sendo nota 1 muito ruim e nota 5 ótimo:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_15A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta15"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=" 1"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_15B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta15"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=" 2"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_15C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta15"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=" 3"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_15D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta15"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=" 4"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_15E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPergunta15"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=" 5"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/text_view_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="16) Na sua opinião, quais foram os pontos POSITIVOS da Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/text_view_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="17) Na sua opinião, quais foram os pontos a serem melhorados da Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Edit_text_17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_custom"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text=" "
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btnGravar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_custom_green"
+                android:text="Cadastrar"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

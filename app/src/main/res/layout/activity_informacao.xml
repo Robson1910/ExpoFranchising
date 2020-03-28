@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gerar_ArquivoXML.InformacaoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#162F83"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arrow_back_informacao"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/ic_arrow_back" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/expo" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/layout_shadow_white"
+                android:paddingBottom="10dp"
+                android:text="Dados da Pesquisa"
+                android:textAlignment="center"
+                android:textColor="#162F83"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Nome da Empresa:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nomeEmpresa_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Responsável:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/responsavel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Cargo:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Cargo_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Cidade de Origem:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cidadeOrigem_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Empresa Expositora:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/empresaExpositora_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Data da Pesquisa:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataPesquisa_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="1) Qual o maior objetivo de sua participação no evento?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="2) Como o evento correspondeu às suas expectativas em relação à captação de futuros franqueados?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/text_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="3) Qual a sua expectativa em volume total de negócios gerados a partir da Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/text_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="4) Quantas e quais marcas você está expondo na Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="5) Qual o setor de atuação e o faturamento anual da empresa?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="6) Participa de outras feiras do setor? Quais?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="7) Como a feira correspondeu às suas expectativas com relação à:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="A) Quantidade de visitantes"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_7A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="B) Qualidade dos visitantes"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_7B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/text_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="8) Em qual mês e local você sugere que ocorra a Expo Franchising ABF Rio 2019?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="9) O que você achou da divulgação para público geral? Justifique ?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="10) Os convites digitais foram repassados aos seus clientes para divulgação de seu estande na feira? Se não enviou, por qual morivo?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="11) Avaliação de tópicos"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="A) Organização geral da feira"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="B) Atendimento ao Expositor"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="C) Departamento Financeiro"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="D) Departamento Comercial"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="E) Limpeza da Feira"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="F) Segurança da Feira"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="G) Montadora Oficial"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11G"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="H) Área de Alimentação"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_11H"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/text_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="12) Levando em consideração todos os fatores, sua participação na Expo Franchising ABF Rio 2018 foi? Justifique ?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="13) Participaria da próxima edição? Justifique?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="14) Você pretende aumentar, manter ou diminuir a área de seu estande? Diminuir, favor justificar?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="15) Que nota você daria ao evento, sendo nota 1 muito ruim e nota 5 ótimo:"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="16) Na sua opinião, quais foram os pontos POSITIVOS da Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/text_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="17) Na sua opinião, quais foram os pontos a serem melhorados da Expo Franchising ABF Rio 2018?"
+                android:textColor="#162F83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reposta_text_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="10dp"
+                android:text="Resposta"
+                android:textColor="#000"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btnGerarArquivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_custom_green"
+                android:text="Gerar Excel"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
